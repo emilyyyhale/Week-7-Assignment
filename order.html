@@ -5,42 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
+    <link rel="stylesheet" href="week8stylesheet.css">
 </head>
 <body>
 
-    <div>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="product.html">Pricing</a>
-        <a href="order.html">Order</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <h1>Em's Custom Cookies</h1>
 
-    <h1>Order Now</h1>
+    <nav class="navigationMenu">
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="gallery.html">Gallery</a> </li>
+            <li> <a href="product.html">Pricing</a> </li>
+            <li> <a href="order.html">Order</a> </li>
+            <li> <a href="about.html">About</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+    </nav>
 
-<form>
-    <p><b>Customer Information</b></p>
-    <input type="text" name="fullName" placeholder="Name"><br>
-    <input type="text" name="address" placeholder="Address"><br>
-    <input type="text" name="email" placeholder="Email Address"><br>
-    <input type="text" name="phone" placeholder="Phone Number"><br>
+    <h2>Order Now</h2>
 
-    <p><b>Order Details</b></p>
-    <input type="text" name="event" placeholder="Event"><br>
-    <input type="text" name="colors" placeholder="Desired Icing Color(s)"><br>
-    <input type="text" name="design" placeholder="Description of design(s) wanted"><br>
-    <input type="text" name="quantity" placeholder="Total Quantity"><br>
-    <input type="text" name="extraDetail" placeholder="Notes for Decorators"><br>
+<form class="center">
 
-    <p><b>Delivery Method</b></p>
-    <input type="radio">Pick Up at Store<br>
+    <h2>Customer Information:</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name"><br><br>
+    <label for="address">Address</label>
+    <input type="text" id="address"><br><br>
+    <label for="email">Email</label>
+    <input type="text" id="email"><br><br>
+    <label for="phone">Phone #</label>
+    <input type="text" id="phone">
+
+    <h2>Order Details:</h2>
+    <label for="event">Event Name</label>
+    <input type="text" id="event"><br><br>
+    <label for="colors">Color Scheme</label>
+    <input type="text" id="colors"><br><br>
+    <label for="designs">Cookie Designs:</label>
+    <input type="text" id="designs"><br><br>
+    <label for="quantity"># of Cookies:</label>
+    <input type="text" id="quantity"><br><br>
+    <label for="comments">Additional Comments:</label>
+    <input type="text" id="comments"><br><br>
+
+    <h2>Delivery Method:</h2>
+    <input type="radio" id="radioPickUp" name="deliveryMethod" value="pickUp">
+    <label for="radioPickUp">Pick Up at Store</label><br>
     <i>Pay with cash or card at the store, or call to prepay over the phone!</i>
     <hr>
-    <input type="radio">Deliver to Event<br>
+
+    <input type="radio" id="radioDeliver" name="deliveryMethod" value="deliver">
+    <label for="radioDeliver">Deliver to Event</label><br>
     <i>Prepay over the phone, or pay upon delivery at the event!</i>
     <hr>
-    <input type="radio">Ship to Address above<br>
+
+    <input type="radio" id="radioShip" name="deliveryMethod" value="ship">
+    <label for="radioShip">Ship to Address above</label><br>
     <i>Pre-payment over the phone required</i>
     <hr>
 
